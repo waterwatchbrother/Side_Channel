@@ -1,8 +1,8 @@
-CFLAGS += -pie -std=gnu99 -lpthread -fPIC
+CFLAGS += -g -std=gnu99 -O2 -pthread -Wall
 
-PROGRAM = spectre_v4
-SOURCE  = source.c
-     
+PROGRAM = meltdown-3a
+SOURCE = source.c sregs.S 
+
 all: $(PROGRAM)
 
 $(PROGRAM): $(SOURCE)

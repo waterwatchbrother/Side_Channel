@@ -1,6 +1,6 @@
 CFLAGS += -pie -std=gnu99 -lpthread -fPIC
 
-PROGRAM = spectre_v4
+PROGRAM = flush+reload
 SOURCE  = source.c
      
 all: $(PROGRAM)
